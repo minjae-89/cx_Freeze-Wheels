@@ -11,7 +11,8 @@ development version and some simple instructions how to build the Python Wheels.
 
 Python 3.5 is built with Visual Studio 2015, so you need to install it to compile extensions
 for Python 3.5. The free [Community Edition](https://www.visualstudio.com/products/free-developer-offers-vs)
-works without any problems.
+works without any problems - but you need to make sure that, for 64 bit platforms, you install the
+'Common Tools for Visual C++ 2015' option, which is not included in the default installation.
 
 Once Visual Studio 2015 is installed, building the cx_Freeze Wheel is very easy:
 
