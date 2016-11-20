@@ -1,13 +1,14 @@
 # cx_Freeze 5.0 for Python 3.5 on Windows
 
-As of August 2016 both [py2exe](http://www.py2exe.org/) and the current stable version of
-[cx_Freeze](http://cx-freeze.sourceforge.net/) (4.3.4) don't have any support for Python 3.5.
-However, the development version of cx_Freeze 5.0 from
-[its Bitbucket repository](https://bitbucket.org/anthony_tuininga/cx_freeze) already has good
-support for Python 3.5, but no binary packages are easily available.
+This repository used to provide binary Python Wheels of cx_Freeze 5.0 for Python 3.5 on Windows.
+However, on 2016-11-16 cx_Freeze 5.0 was finally declared stable and official binary Wheels
+for multiple Python versions (including 3.5) [were uploaded to PyPI](https://pypi.python.org/pypi/cx_Freeze).
+Since my binary packages of development snapshots have become obsolete, I have removed them from
+this repository and you should use the official release from PyPI instead.
 
-This page aims to provide both pre-built Python Wheels (32 and 64 bit) of the cx_Freeze 5.0
-development version and some simple instructions how to build the Python Wheels.
+However, I will keep the previous build instructions here for a while:
+
+## Build instructions
 
 Python 3.5 is built with Visual Studio 2015, so you need to install it to compile extensions
 for Python 3.5. The free [Community Edition](https://www.visualstudio.com/products/free-developer-offers-vs)
@@ -26,6 +27,3 @@ Once Visual Studio 2015 is installed, building the cx_Freeze Wheel is very easy:
    `pip install cx_Freeze-5.0-cp35-cp35m-win_amd64.whl` (for the 64 bit version). Make sure that
    your `pip` is a reasonably recent version because old `pip` versions can't install directly from
    wheels.
-
-The binary Wheels on this page are the repository version `adb1d5716a84`
-of cx_Freeze 5.0, built with Visual Studio Community 2015 Update 2 on 2016-08-29.
